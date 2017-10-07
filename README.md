@@ -1,5 +1,6 @@
 # project-seed
 My Node / Vue.js project seed
 
-## Notes
-- Everything needed to build the app is in `dependencies` for easy deploying on Heroku. Dependencies for testing can go in `devDependencies`
+See `package.json` scripts for all the commands.
+
+All node modules needed build the app are listed as `dependencies` for Heroku easy deployment. Modules for local dev and testing can go in `devDependencies`
