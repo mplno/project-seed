@@ -1,7 +1,7 @@
 <template lang="html">
   <div class="root bg-white">
     <div class="pa5 code dark-gray">
-      <p class="f4">Project Seed</p>
+      <p class="f4 pb4">Project Seed</p>
       <router-view></router-view>
     </div>
   </div>

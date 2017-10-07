@@ -5,6 +5,11 @@ Vue.use(Vuex)
 
 export default new Vuex.Store({
   state: {
-    someData: 1
+    message: 'This is local app data.'
+  },
+  mutations: {
+    updateMessage (state, value) {
+      state.message = value
+    }
   }
 })

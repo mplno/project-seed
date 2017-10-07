@@ -1,7 +1,7 @@
 let getData = () => {
     return new Promise((resolve) => {
         setTimeout(() => {
-            resolve('some async data!');
+            resolve(`Here's your async data!`);
         }, 200);
     });
 }
