@@ -1,0 +1,58 @@
+{
+  "name": "project-seed",
+  "version": "0.0.1",
+  "description": "My Node / Vue.js project seed",
+  "engines": {
+    "node": "7.10.1"
+  },
+  "main": "index.js",
+  "scripts": {
+    "dev:client": "cross-env NODE_ENV=development webpack-dev-server --open --hot",
+    "build:client": "cross-env NODE_ENV=production webpack --progress --hide-modules --display-error-details",
+    "dev:server": "cross-env NODE_ENV=development babel-watch src/server/index.js",
+    "build:server": "cross-env NODE_ENV=production babel src/server/ -d dist/server",
+    "postinstall": "npm run build:server && npm run build:client",
+    "build": "npm run build:server && npm run build:client",
+    "start": "node dist/server/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mplno/project-seed.git"
+  },
+  "keywords": [
+    "vue.js",
+    "node"
+  ],
+  "author": "Michael Polino",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mplno/project-seed/issues"
+  },
+  "homepage": "https://github.com/mplno/project-seed#readme",
+  "dependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.0",
+    "body-parser": "^1.18.2",
+    "cross-env": "^5.0.5",
+    "css-loader": "^0.28.7",
+    "express": "^4.16.1",
+    "file-loader": "^1.1.5",
+    "html-loader": "^0.5.1",
+    "html-webpack-plugin": "^2.30.1",
+    "node-sass": "^4.5.3",
+    "sass-loader": "^6.0.6",
+    "tachyons-sass": "^4.8.1",
+    "vue": "^2.4.4",
+    "vue-loader": "^13.0.5",
+    "vue-resource": "^1.3.4",
+    "vue-router": "^2.7.0",
+    "vue-template-compiler": "^2.4.4",
+    "vuex": "^2.4.1",
+    "webpack": "^3.6.0"
+  },
+  "devDependencies": {
+    "webpack-dev-server": "^2.9.1"
+  }
+}
